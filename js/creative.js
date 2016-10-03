@@ -10,6 +10,7 @@
         event.preventDefault();
     });
     
+    //smooth scrolling added
     $("#nav ul li a[href^='#']").on('click', function(e) {
         e.preventDefault();
         
