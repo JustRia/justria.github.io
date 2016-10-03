@@ -10,8 +10,7 @@
         event.preventDefault();
     });
     
-    //smooth scrolling added
-    $("#nav ul li a[href^='#']").on('click', function(e) {
+      $("#nav ul li a[href^='#']").on('click', function(e) {
         e.preventDefault();
         
         //store hash
@@ -23,7 +22,8 @@
             window.location.hash = hash;
         });
     });
-
+    
+    
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
         target: '.navbar-fixed-top',
