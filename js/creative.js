@@ -9,6 +9,19 @@
         }, 1250, 'easeInOutExpo');
         event.preventDefault();
     });
+    
+    $("#nav ul li a[href^='#']").on('click', function(e) {
+        e.preventDefault();
+        
+        //store hash
+        var hash = this.hash;
+        
+        $('html, body').animate({
+            scrollTop: $(hash.offset().top
+        }, 300, function(){
+            window.location.hash = hash;
+        });
+    });
 
     // Highlight the top nav as scrolling occurs
     $('body').scrollspy({
