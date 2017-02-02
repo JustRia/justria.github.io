@@ -165,8 +165,9 @@ header .header-content {
   padding: 100px 15px 100px;
   width: 100%;
 }
+
 header .header-content .blogtry-bg {
-  background-image: url('.../img/test_bg - Copy.jpg');
+  background-image: url('.../img/test_bg_copy.jpg')
 }
 header .header-content .header-content-inner h1 {
   font-weight: 700;
